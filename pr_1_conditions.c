@@ -18,10 +18,14 @@ int main()
     
     if (input_1 > 0 && input_2 > 0 && input_3 > 0) {
         printf("Condition а is correct.\n");
+    } else {
+        printf("Condition а is not correct.\n");
     }
     
     if (input_1 > 0 || input_2 > 0 || input_3 > 0) {
         printf("Condition б is correct.\n");
+    } else {
+        printf("Condition б is not correct.\n");
     }
 
     if (
@@ -30,6 +34,8 @@ int main()
         (input_1 < 0 && input_2 < 0 && input_3 > 0)
     ) {
         printf("Condition в is correct.\n");
+    } else {
+        printf("Condition в is not correct.\n");
     }
     
     // ровно два из них положительны - то же самое что
@@ -40,6 +46,8 @@ int main()
         (input_1 > 0 && input_2 > 0 && input_3 < 0)
     ) {
         printf("Condition г is correct.\n");
+    } else {
+        printf("Condition г is not correct.\n");
     }
     
     if(
@@ -48,10 +56,9 @@ int main()
         (input_1 == input_3)
     ) {
         printf("Condition д is correct.\n");
+    } else {
+        printf("Condition д is not correct.\n");
     }
-
-    else {
-        printf("No condition is correct.\n");
-    }
+    
     return 0;
 }

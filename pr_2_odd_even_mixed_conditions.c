@@ -16,13 +16,15 @@ int main()
     if (number > 9 && number < 100 && number % 2 == 0) {
     // (number % 2 == 0) == !(number % 2) 
     // as !0 == 1, !1 == 0
-        printf("1. YES");
+        printf("1. YES\n");
+    } else {
+        printf("1. NO\n");
     }
-    else if (number >= 100 && number <= 999 && number % 2 == 1) {
-        printf("2. YES");
+    if (number >= 100 && number <= 999 && number % 2 == 1) {
+        printf("2. YES\n");
     }
     else {
-        printf("NO");
+        printf("2. NO\n");
     }
 
     return 0;
