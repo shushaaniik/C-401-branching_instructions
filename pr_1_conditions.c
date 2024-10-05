@@ -6,7 +6,7 @@
 в) ровно один из них положителен,
 г) ровно два из них положительны,
 д) хотя бы два из них равны,
-В противном случае "Condition is not correct.".
+В противном случае "No condition is correct.".
 
 *******************************************************************************/
 #include <stdio.h>
@@ -17,11 +17,11 @@ int main()
     scanf("%d %d %d", &input_1, &input_2, &input_3);
     
     if (input_1 > 0 && input_2 > 0 && input_3 > 0) {
-        printf("Condition а is not correct.");
+        printf("Condition а is correct.\n");
     }
     
     if (input_1 > 0 || input_2 > 0 || input_3 > 0) {
-        printf("Condition б is not correct.");
+        printf("Condition б is correct.\n");
     }
 
     if (
@@ -29,7 +29,7 @@ int main()
         (input_1 < 0 && input_2 > 0 && input_3 < 0) ||
         (input_1 < 0 && input_2 < 0 && input_3 > 0)
     ) {
-        printf("Condition в is not correct.");
+        printf("Condition в is correct.\n");
     }
     
     // ровно два из них положительны - то же самое что
@@ -39,7 +39,7 @@ int main()
         (input_1 > 0 && input_2 < 0 && input_3 > 0) ||
         (input_1 > 0 && input_2 > 0 && input_3 < 0)
     ) {
-        printf("Condition г is not correct.");
+        printf("Condition г is correct.\n");
     }
     
     if(
@@ -47,8 +47,11 @@ int main()
         (input_2 == input_3) ||
         (input_1 == input_3)
     ) {
-        printf("Condition д is not correct.");
+        printf("Condition д is correct.\n");
     }
 
+    else {
+        printf("No condition is correct.\n");
+    }
     return 0;
 }
